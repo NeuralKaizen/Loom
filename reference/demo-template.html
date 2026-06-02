@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- everlearn demo template. RULES: self-contained, no CDNs, max 80 lines,
+     interactive, dark-friendly, uses the user's domain & naming. -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; padding: 20px; font: 14px/1.5 system-ui, sans-serif;
+    background: #1e1e2e; color: #cdd6f4;
+  }
+  h2 { margin: 0 0 12px; font-size: 16px; color: #89b4fa; }
+  .stage {
+    background: #181825; border: 1px solid #313244; border-radius: 8px;
+    padding: 16px; min-height: 80px; display: flex; align-items: center;
+    justify-content: center; font-size: 20px; transition: all .25s ease;
+  }
+  .controls { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+  button {
+    background: #585b70; color: #cdd6f4; border: 0; border-radius: 6px;
+    padding: 8px 14px; cursor: pointer; font-size: 13px;
+  }
+  button:hover { background: #6c7086; }
+  .note { margin-top: 10px; font-size: 12px; color: #9399b2; }
+</style>
+</head>
+<body>
+  <!-- Replace this whole block with a demo of the ACTUAL concept,
+       built around the user's domain (their cart, their queue, their state). -->
+  <h2>Concepto: &lt;nombre&gt;</h2>
+  <div class="stage" id="stage">estado inicial</div>
+  <div class="controls">
+    <button onclick="step()">Siguiente paso</button>
+    <button onclick="reset()">Reset</button>
+  </div>
+  <p class="note" id="note">Pulsa para ver cómo cambia el estado.</p>
+
+<script>
+  // Keep state and logic minimal — demonstrate ONE idea by manipulation.
+  const stage = document.getElementById('stage');
+  const note  = document.getElementById('note');
+  let i = 0;
+  const steps = [
+    { text: 'estado inicial', note: 'Punto de partida.' },
+    { text: 'estado intermedio', note: 'Qué cambió y por qué.' },
+    { text: 'estado final', note: 'El resultado del concepto.' },
+  ];
+  function render() {
+    stage.textContent = steps[i].text;
+    note.textContent = steps[i].note;
+  }
+  function step()  { i = (i + 1) % steps.length; render(); }
+  function reset() { i = 0; render(); }
+  render();
+</script>
+</body>
+</html>
