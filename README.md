@@ -14,10 +14,11 @@ threads of one loom.
 | **everlearn** | capture     | Capture & expand a concept you're learning → `concepts/`    |
 | **decide**    | capture     | Record a technical decision with its context → `decisions/` |
 | **log**       | capture     | Quick capture of a learning, error, or reflection → `logs/` |
+| **arc**       | context     | Track a project's context & lifecycle (living hub) → `projects/` |
 | **recall**    | retrieval   | "Why do I do X?" / "What did I learn about Y?"              |
 | **thread**    | maintenance | Keep notes organized and colored by topic across the vault  |
 
-> Status: **everlearn** is built. The rest are in progress.
+> Status: **everlearn** and **decide** are built. The rest are in progress.
 
 ## How it fits together
 
