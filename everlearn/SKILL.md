@@ -74,6 +74,7 @@ The structure is **domain-agnostic and adaptive**:
 6. **Why it works this way** — the reasoning, tradeoffs, when NOT to apply it (for non-technical concepts: the nuance, where it breaks down).
 7. **Common mistakes** — 2-4 concrete pitfalls.
 
+
 A **Demo** section is added later, and only if the user accepts the demo offer (see below).
 
 ## Optional, on request only
