@@ -65,7 +65,7 @@ Write `<conceptsDir>/<concept-slug>.md`, following `reference/note-template.md`.
 
 The structure is **domain-agnostic and adaptive**:
 
-1. **Frontmatter** — `concept`, `created` (today's date), `context` (one line: what they were doing when this came up), `tags`.
+1. **Frontmatter** — follow the shared note contract (`../CONTRACT.md`): `type: concept`, `created` (today's date), `tags` (topic tags — thread colors by these), `context` (one line: what they were doing when this came up).
 2. **What it is** — 2-3 lines. No filler.
 3. **Why it matters here** — tied to *their specific* task.
 4. **The core** — how it works, with example(s). If the concept is technical, this is a minimal **code pattern** in a fenced block using their stack and naming. If it's not, it's a concrete **worked example or analogy**. Code is just one kind of example — include it only when it fits.
