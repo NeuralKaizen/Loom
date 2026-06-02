@@ -18,7 +18,7 @@ threads of one loom.
 | **recall**    | retrieval   | "Why do I do X?" / "What did I learn about Y?"              |
 | **thread**    | maintenance | Keep notes organized and colored by topic across the vault  |
 
-> Status: **everlearn**, **decide**, **log**, **arc**, and **recall** are built. **thread** in progress.
+> Status: all six skills are built — everlearn, decide, log, arc, recall, thread.
 
 ## How it fits together
 
